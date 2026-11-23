@@ -2,7 +2,7 @@
 title: "Hidden blog"
 description: "Post about the hidden blog"
 pubDate: "November 22, 2026"
-heroImage: "/post_img.webp"
+heroImage: "/favicon.svg"
 tags: ["greeting"]
 ---
 
