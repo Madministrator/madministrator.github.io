@@ -1,0 +1,275 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import EducationCard from "../components/cv/EducationCard.astro";
+import SkillHighlight from "../components/cv/SkillHighlight.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Software Engineer with 6+ years of experience in software development. Proficient in various programming languages, frameworks, and principles. Experience primarily in design and development of high availability distributed cloud applications. Secondarily with web design and development, database schema design, normalization, and migration.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+  <EducationCard
+    title="Bachelor of Science degree in Computer Science"
+    subtitle="2017 to 2020 at University of Wisconsin-Stout, Menomonie WI, United States"
+    img="/University_of_Wisconsin-Stout_Polytechnic_Logo.svg"
+    imgAlt="University of Wisconsin-Stout Logo"
+  >
+    <ul class="list-disc">
+      <li>Concentration in Mobile Application Development</li>
+      <li>Minor in Mathematics</li>
+      <li>Graduated with Honors, Magna Cum Laude</li>
+    </ul>
+  </EducationCard>
+  </div>
+  <br>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Software Engineer 2"
+      subtitle="From 2023 at Jamf Software, Minneapolis MN, United States"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Led the design and development of highly available cloud micro services supporting hundreds of thousands of requests per second, incorporating horizontal scaling, redundancy, and disaster recovery strategies.</li>
+        <li>Served as technical lead on multiple engineering initiatives, driving architectural decisions, coordinating implementation, and providing technical direction.</li>
+        <li>Led team adoption of AI-assisted planning and specification practices, shifting technical design earlier in the development lifecycle and improving the quality and readiness of engineering initiatives.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Engineer 1"
+      subtitle="From 2022 to 2023 at Jamf Software, Minneapolis MN, United States"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Championed test automation across engineering teams, developing reusable testing utilities and expanding integration, contract, and end-to-end testing practices.</li>
+        <li>Modernized testing strategies to improve deployment confidence, reduce production incidents, and accelerate regression testing cycles.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Associate Software Engineer"
+      subtitle="From 2021 to 2022 at Jamf Software, Minneapolis MN, United States"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Developed Apple Mobile Device Management (MDM) solutions for educational organization such as universities and K-12 schools around the globe.</li>
+        <li>Implemented software solutions in a variety of different languages and cloud-based applications.</li>
+        <li>Collaborated with teams from across the globe to deliver a product with international customers.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Engineering Intern"
+      subtitle="From June 2020 to January 2021 at Jamf Software, Eau Claire WI, United States"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Developed AWS lambdas using TypeScript.</li>
+        <li>Maintained and expanded Jamf server products written in Java.</li>
+        <li>Rewrote the system testing framework in the CI/CD pipeline for regular live testing of the Lambda.</li>
+        <li>Internship ended with full time employment at Jamf, see above.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Java Developer Intern, Information Systems Point of Sale Register Team"
+      subtitle="From June 2019 to August 2019 at Menards Corporation, Eau Claire WI, United States"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Developed and maintained applications for Menards, primarily using Java</li>
+        <li>Created test plans, thoroughly tested and debugged all programs prior to deployment</li>
+        <li>Configured point-of-sale hardware for testing in a linux based environment</li>
+      </ul>
+    </TimeLineElement>
+  </div>
+
+  <!-- Skills section 1: Highlight cards -->
+   <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Highlighted Skills</div>
+  </div>
+  <div id="highlighted-skills" class="grid grid-cols-2 gap-4 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+    <SkillHighlight
+      title="ArgoCD"
+      img="/skill-icons/argocd.svg"
+      url="https://argo-cd.readthedocs.io/en/stable/"
+    />
+    <SkillHighlight
+      title="AWS"
+      img="/skill-icons/amazon-web-services.svg"
+      url="https://aws.amazon.com/"
+    />
+    <SkillHighlight
+      title="Claude Code"
+      img="/skill-icons/claudecode.svg"
+      url="https://claude.com/product/claude-code"
+    />
+    <SkillHighlight
+      title="Docker"
+      img="/skill-icons/docker.svg"
+      url="https://www.docker.com/"
+    />
+    <SkillHighlight
+      title="DynamoDB"
+      img="/skill-icons/dynamodb.svg"
+      url="https://aws.amazon.com/dynamodb/"
+    />
+    <SkillHighlight
+      title="GitHub"
+      img="/skill-icons/github.svg"
+      url="https://www.github.com/"
+    />
+    <SkillHighlight
+      title="GitHub Actions"
+      img="/skill-icons/github-actions.svg"
+      url="https://docs.github.com/en/actions"
+    />
+    <SkillHighlight
+      title="Go"
+      img="/skill-icons/golang.svg"
+      url="https://go.dev/"
+    />
+    <SkillHighlight
+      title="Grafana"
+      img="/skill-icons/grafana.svg"
+      url="https://grafana.com/"
+    />
+    <SkillHighlight
+      title="Java"
+      img="/skill-icons/java.svg"
+      url="https://www.java.com/en/"
+    />
+    <SkillHighlight
+      title="JavaScript"
+      img="/skill-icons/javascript.svg"
+      url="https://www.javascript.com/"
+    />
+    <SkillHighlight
+      title="Jenkins"
+      img="/skill-icons/jenkins.svg"
+      url="https://www.jenkins.io/"
+    />
+    <SkillHighlight
+      title="Kotlin"
+      img="/skill-icons/kotlin.svg"
+      url="https://kotlinlang.org/"
+    />
+    <SkillHighlight
+      title="Kubernetes"
+      img="/skill-icons/kubernetes.svg"
+      url="https://kubernetes.io/"
+    />
+    <SkillHighlight
+      title="MySQL"
+      img="/skill-icons/mysql.svg"
+      url="https://www.mysql.com/"
+    />
+    <SkillHighlight
+      title="OpenAPI"
+      img="/skill-icons/openapi.svg"
+      url="https://openapis.org/"
+    />
+    <SkillHighlight
+      title="OpenTofu"
+      img="/skill-icons/opentofu.svg"
+      url="https://opentofu.org/"
+    />
+    <SkillHighlight
+      title="Pact Contract Testing"
+      img="/skill-icons/pact-link.svg"
+      url="https://www.pact.io/"
+    />
+    <SkillHighlight
+      title="PostgreSQL"
+      img="/skill-icons/postgresql.svg"
+      url="https://www.postgresql.org/"
+    />
+    <SkillHighlight
+      title="Python"
+      img="/skill-icons/python.svg"
+      url="https://www.python.org/"
+    />
+    <SkillHighlight
+      title="RabbitMQ"
+      img="/skill-icons/rabbitmq.svg"
+      url="https://www.rabbitmq.com/"
+    />
+    <SkillHighlight
+      title="Redis"
+      img="/skill-icons/redis.svg"
+      url="https://redis.io/"
+    />
+    <SkillHighlight
+      title="Spring Framework"
+      img="/skill-icons/spring.svg"
+      url="https://spring.io/"
+    />
+    <SkillHighlight
+      title="Terraform"
+      img="/skill-icons/terraform.svg"
+      url="https://developer.hashicorp.com/terraform"
+    />
+  </div>
+
+  <!-- Skills section 2: Raw list of skills -->
+   <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+  <ul class="list-disc md:columns-6 columns-2 mx-6">
+    <!-- Languages -->
+    <li>Java</li>
+    <li>Kotlin</li>
+    <li>Go</li>
+    <li>PHP</li>
+    <li>JavaScript</li>
+    <li>TypeScript</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <!-- Testing -->
+    <li>Test Automation</li>
+    <li>Unit Testing</li>
+    <li>Integration Testing</li>
+    <li>System Testing</li>
+    <li>End-to-end (E2E) Testing</li>
+    <li><a href="https://pact.io/" target="_blank">Pact Contract Testing</a></li>
+    <li><a href="https://testcontainers.com/" target="_blank">Testcontainers</a></li>
+    <!-- CI/CD and automation -->
+    <li>Jenkins</li>
+    <li>GitHub Actions</li>
+    <li>ArgoCD</li>
+    <!-- Databases -->
+    <li>MySQL</li>
+    <li>PostgresQL</li>
+    <li>Amazon DynamoDB</li>
+    <!-- System design and distributed systems -->
+    <li>Git</li>
+    <li>RabbitMQ</li>
+    <li>Redis</li>
+    <!-- Cloud Technologies -->
+    <li>Amazon Simple Storage Service (S3)</li>
+    <li>Amazon RDS</li>
+    <li>Amazon MQ</li>
+    <li>Helm</li>
+    <li>Terraform</li>
+    <li>OpenTofu</li>
+    <li>Docker</li>
+    <li>Kubernetes</li>
+    <!-- Other -->
+    <li>Scrum</li>
+    <li>Jira</li>
+    <li>GitOps</li>
+    <li>Infrastructure as Code (IaC)</li>
+    <li>Grafana</li>
+    <li>Prometheus</li>
+    <li>Spring Framework</li>
+    <li>Micronaut Framework</li>
+  </ul>
+</BaseLayout>

@@ -1,0 +1,23 @@
+---
+// The Icon Card is a card with an icon but no link. Meant to statically display information.
+const { title, subtitle, img, imgAlt } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<div class="w-full">
+    <div class="card bg-base-100 grid grid-cols-3">
+      <Image
+        width={750}
+        height={422}
+        format="svg"
+        src={img}
+        alt={imgAlt}
+        class="col-start-1 row-start-1 w-full h-auto self-center object-contain"
+      />
+      <div class="card-body col-start-2 col-span-2 row-start-1">
+        <h2 class="card-title">{title}</h2>
+        <span class="font-light text-sm">{subtitle}</span>
+        <slot />
+      </div>
+    </div>
+</div>
