@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Active Personal Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Home Lab"
+    img="/project-images/server-minimalistic.svg"
+    imgFormat="svg"
+    desc="Practicing infrastructure-as-code and essential kubernetes concepts to manage my personal media server with a monitoring stack."
+    url="https://github.com/Madministrator/home-lab"
+    tags={['Kubernetes', 'Helm', 'Terraform', 'Infrastructure-as-code', 'Networking', 'Grafana']}
+  />
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">College Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Steganography Tool"
+    img="/project-images/shakespeares_works.png"
+    imgFormat="png"
+    desc="Steganography is the process of concealing data within images. In this example, I've hidden the entire works of William Shakespeare within his Wikipedia profile picture. If you download that file and use the tool, you can extract the original text from the photo."
+    url="https://github.com/Madministrator/steganography"
+    tags={['HTML', 'CSS', 'JavaScript']}
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="iOS Space Invaders Clone"
+    img="/project-images/SI_GamePlay.png"
+    imgFormat="png"
+    desc="For UW-Stout's IOS Programming class, I made a clone of the original space invaders game as an IOS app. Due to the time limitations of the class, and my only access to a mac was while inside a computer lab, it's not quite as fully featured as I would have liked."
+    url="https://github.com/Madministrator/SpaceInvadersClone"
+    tags={['Swift', 'iOS', 'Mobile Applications Development', 'SpriteKit']}
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="WiFi Heat Map"
+    img="/project-images/WifiHeatMap_SouthCampusMap.jpg"
+    imgFormat="jpg"
+    desc="For UW-Stout's Mobile Applications Development for Android class, the goal of this project was meant to be a mixture of differing technologies merged together to make a useful application. It maps the strength of a Wi-Fi network and displays it as an overlay over a Google Map. The data is collected automatically for the user using native Android utilities and stored locally on the device using a Room Database."
+    url="https://github.com/wifiheatmap/wifiheatmap"
+    tags={['Kotlin', 'Android', 'Mobile Applications Development', 'GoogleMaps']}
+  />
+</BaseLayout>

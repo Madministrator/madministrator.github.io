@@ -1,0 +1,24 @@
+---
+const { title, img, imgFormat = "svg", url, target = "_blank" } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<div
+  class="aspect-square w-32 rounded-lg bg-base-100 transition ease-in-out hover:scale-[102%] hover:shadow-xl"
+>
+  <a href={url} target={target} class="flex h-full flex-col items-center justify-center gap-2 p-3 text-center">
+      {
+        img && (
+          <Image
+            src={img}
+            width={96}
+            height={96}
+            format={imgFormat}
+            alt={title}
+            class="h-16 w-16 object-contain"
+          />
+        )
+      }
+      <span class="text-sm font-bold">{title}</span>
+  </a>
+</div>
