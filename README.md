@@ -33,7 +33,7 @@ Global site configuration lives in the '/src/config.ts' file:
 
 ### Theming
 
-Template theme is controlled the `data-theme` attribute of the `<html>` tag in `BaseLayout.astro` file.
+Template theme is controlled by the daisyUI configuration in `tailwind.config.cjs`
 
 Default themes available [here](https://daisyui.com/docs/themes/). Custom themes are also possible.
 

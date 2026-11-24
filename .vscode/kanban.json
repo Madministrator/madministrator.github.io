@@ -18,10 +18,6 @@
                 {
                     "text": "# Add resume to website\nAdd a copy of my resume to the website to be available for downloading ",
                     "id": "k64rnw8etmpfykfk2ixjthh0"
-                },
-                {
-                    "text": "# Replacing theming\n- At minimum: do something more colorfull than black and white. \n- Perhaps I can do something that responds to the system's dark mode/light mode preference?\n- The [example page](https://astrofy-template.netlify.app/) had a theme option in the top-right. Could I incorporate that into my portfolio design?\n",
-                    "id": "bnp53h5zkdlll50yd0rcm4ma"
                 }
             ],
             "id": "nle8epdxb5wntkqyjnt7jxk9",
@@ -31,8 +27,8 @@
             "title": "Doing",
             "tasks": [
                 {
-                    "text": "# Update all dependencies\n- The template was an outdated NPM project, let's update to latest for good hygiene.\n- Apparently we'd go from Astro 4 to Astro 7. So high risk of breaking changes.\n",
-                    "id": "nahaphrtpwrqoptc5z2yzat2"
+                    "text": "# Replacing theming\n- At minimum: do something more colorfull than black and white. \n- Perhaps I can do something that responds to the system's dark mode/light mode preference?\n- The [example page](https://astrofy-template.netlify.app/) had a theme option in the top-right. Could I incorporate that into my portfolio design?\n",
+                    "id": "bnp53h5zkdlll50yd0rcm4ma"
                 }
             ],
             "id": "c2x69afihjdv3b7a0e8e646y",
@@ -41,6 +37,10 @@
         {
             "title": "Done",
             "tasks": [
+                {
+                    "text": "# Update all dependencies\n- The template was an outdated NPM project, let's update to latest for good hygiene.\n- Apparently we'd go from Astro 4 to Astro 7. So high risk of breaking changes.\n",
+                    "id": "nahaphrtpwrqoptc5z2yzat2"
+                },
                 {
                     "text": "# Publish website\nCreate a GitHub Action which deploys the website to madministrator.github.io on merges to main following this guide: https://docs.astro.build/en/guides/deploy/github/ ",
                     "id": "qy4xtg0ik2na0ycq15f1bi1a"
@@ -96,5 +96,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1795465768367
+    "timestamp": 1795531882845
 }
